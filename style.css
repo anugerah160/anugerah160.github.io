@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+span{
+    color: var(--color-brand2);
+}
+
+/* ---------------navbar--------------- */
+.navbar {
+    margin-bottom: 0;
+    height: 80px;
+    background-color: var(--color-base);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--color-brand);
+}
+
+.navbar-brand:hover{
+    color: var(--color-heading);
+}
+
+.navbar .nav-link {
+    border: 2px solid transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    border-bottom-color: var(--color-brand);
+    border-top-color: var(--color-brand);
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+
+/* -------------------home------------------ */
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.hehe {
+    border-radius: 300px;
+    border: 5px solid var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.certi{
+    transition: all 0.6s ease;
+
+}
+
+.bd{
+    transition: all 0.4s ease;
+}
+
+.bd:hover{
+    transform: scale(1.5);
+}
+
+.certi:hover{
+    transform: scale(4);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+.section h1, .section h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.section p {
+    font-weight: 400;
+}
+
+.experience-card {
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+}
