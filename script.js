@@ -13,3 +13,22 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+$(document).ready(function() {
+  $('#navbarNav').on('shown.bs.collapse', function () {
+      // $('#home').css('margin-top', '200px');
+      $('.navbar').css('height', '330px');
+  });
+
+  $('#navbarNav').on('hidden.bs.collapse', function () {
+      // $('#home').css('margin-top', '0');
+      $('.navbar').css('height', '80px');
+      $('.navbar').removeClass('navbar-expanded-bg');
+  });
+
+  $('.nav-link').on('click', function() {
+    if ($('.navbar-toggler').is(':visible')) {
+        $('.navbar-toggler').click();
+    }
+});
+
+});

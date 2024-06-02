@@ -69,10 +69,15 @@ span{
     color: var(--color-brand);
 }
 
+.navbar-toggler{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand2);
+}
 
 /* -------------------home------------------ */
 
 .full-height {
+    position: relative;
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -117,7 +122,7 @@ span{
 }
 
 .certi:hover{
-    transform: scale(4);
+    transform: scale(2);
 }
 
 .shadow-effect {
@@ -138,15 +143,6 @@ span{
 
 .card-custom:hover .card-custom-image img {
     transform: scale(1.1);
-}
-
-.section h1, .section h2 {
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.section p {
-    font-weight: 400;
 }
 
 .experience-card {
