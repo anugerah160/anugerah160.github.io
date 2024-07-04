@@ -113,6 +113,10 @@ span{
 
 }
 
+.conts{
+    margin-top: -80px;
+}
+
 .bd{
     transition: all 0.4s ease;
 }
